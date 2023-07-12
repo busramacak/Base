@@ -8,8 +8,8 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 
-abstract class BaseFragment<DBinding:ViewDataBinding>(private val layout :Int): Fragment() {
-    open var useSharedViewModel:Boolean = false
+abstract class BaseFragment<DBinding:ViewDataBinding>: Fragment() {
+
 
 
     protected lateinit var binding : DBinding
@@ -21,8 +21,7 @@ abstract class BaseFragment<DBinding:ViewDataBinding>(private val layout :Int): 
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding= DataBindingUtil.inflate(inflater,layout,container,false)
-        binding=getDataBinding()
+       binding=getDataBinding()
         return binding.root
     }
 
@@ -33,6 +32,5 @@ abstract class BaseFragment<DBinding:ViewDataBinding>(private val layout :Int): 
     }
 
     open fun setUpViews() {}
-
 
 }

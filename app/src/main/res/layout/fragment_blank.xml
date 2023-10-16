@@ -2,17 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <data>
-        <variable
-            name="bind"
-            type="com.bmprj.base.BlankFragment" />
 
-    </data>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".BlankFragment">
+        tools:context=".ui.BlankFragment">
 
         <!-- TODO: Update blank fragment layout -->
         <TextView

@@ -5,7 +5,7 @@ import com.bmprj.base.base.BaseFragment
 import com.bmprj.base.databinding.FragmentBlankBinding
 
 class BlankFragment : BaseFragment<FragmentBlankBinding>(R.layout.fragment_blank){
-    override fun setUpViews() {
+    override fun initView() {
         binding.txt.text=getString(R.string.app_name)
     }
 }
